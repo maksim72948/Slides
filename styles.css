@@ -63,33 +63,3 @@ body {
   text-align: center;
 
 }
-
-.backside {
-  background-color: #333;
-  overflow: hidden;
-  backface-visibility: hidden;
-  position: absolute;
-  transform: perspective(600px) rotateY(180deg);
-  transition: transform .6s linear;
-  flex: 20;
-
-}
-
-.backside h2{
-  text-align: center;
-}
-.backside p{
-  margin-left: 10px;
-}
-
-.frontside{
-  transform: perspective(600px) rotateY(0deg);
-}
-
-
-.container:active > .frontside{
-  transform: perspective(600px) rotateY(-180deg);
-}
-.container:active > .backside{
-  transform: perspective(600px) rotateY(0deg);
-}
